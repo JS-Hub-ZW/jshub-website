@@ -1,0 +1,39 @@
+---
+// const { title, description, url = Astro.url } = Astro.props;
+
+import site from '../../data/site.json'
+const {title, description} = site
+
+let metaTitle = title ? title + " | JS Hub Zim" : "JS Hub Zim";
+---
+
+<!-- Global Metadata -->
+<meta http-equiv="Content-Language" content="en" />
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- logo -->
+<link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+
+<!-- Primary Meta Tags -->
+<title>{metaTitle}</title>
+<meta name="title" content={metaTitle} />
+<meta name="description" content={description} />
+
+<!-- Canonical URL -->
+<!-- <link rel="canonical" href={url} /> -->
+
+<!-- Open Graph -->
+<!-- <meta property="og:site_name" content="James Midzi" />
+<meta property="og:title" content={metaTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={url} />
+<meta property="og:image" content={image || site.image.src} />
+<meta property="og:image:url" content={image || site.image.src} />
+<meta property="og:image:secure_url" content={image || site.image.src} />
+<meta property="og:image:type" content="image/jpg" />
+<meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="470" />
+<meta property="og:image:alt" content={image?.alt || site.image.alt} /> -->
+
+
