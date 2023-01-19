@@ -14,19 +14,12 @@ body:
       label: Feature Summary
       description: A clear and concise description of the feature.
       placeholder: "Example: As a [user role], I want to [complete action] so that I can [achieve outcome]"
-    validations:
-      required: true
   - type: textarea
     id: acceptance
     attributes:
       label: Acceptance criteria
       description: What would you consider to be completion for this feature?
       placeholder: |
-        - [ ] [User Role] can [Action] [Resource] 
-        - [ ] [User Role] can also [Action] [Resource] 
-        - [ ] [Other User Role] cannot [Action] [Resource] 
-        ...
-      value: |
         - [ ] [User Role] can [Action] [Resource] 
         - [ ] [User Role] can also [Action] [Resource] 
         - [ ] [Other User Role] cannot [Action] [Resource] 
@@ -38,18 +31,10 @@ body:
     attributes:
       label: Scenario
       description: Describe a scenario where this feature would be useful.
-      placeholder: Under what circumstances would this feature be useful
-      value: |
-        Example:  Given that I am on the sign-in page
-        When I enter my user name or password incorrectly
-        and click "Sign In"
-        Then I see an error message "Sorry, incorrect user name or password".
-    validations:
-      required: true
+      placeholder: Under what circumstances would this feature be useful?
   - type: textarea
     id: context
     attributes:
       label: Any Additional Context
       description: Any other context or additional information.
       placeholder: Any other context or additional information you wish to share about the proposed feature...
-      value: "Any other context or additional information you wish to share about the proposed feature..."

@@ -1,4 +1,4 @@
-name: Task Request
+name: Task
 description: Request a new task for this project
 title: "[Task]: "
 labels:
@@ -14,7 +14,6 @@ body:
       label: Task Summary
       description: A brief description of what the task will accomplish.
       placeholder: "Example: Make [x] do [y]"
-      value: "Example: Make [x] do [y]"
     validations:
       required: true
   - type: textarea
@@ -25,9 +24,6 @@ body:
       placeholder: |
         - [ ] [x] does/is [y] or [x] exists 
         ...
-      value: |
-        - [ ] [x] does/is [y] or [x] exists 
-        ...
     validations:
       required: true
   - type: textarea
@@ -36,11 +32,6 @@ body:
       label: Scenario
       description: Describe a scenario where this feature would be useful.
       placeholder: Under what circumstances would this feature be useful
-      value: |
-        Example:  When a user navigates the site
-        Then all images will be loaded from the Amazon S3 bucket.
-    validations:
-      required: true
   - type: textarea
     id: context
     attributes:
